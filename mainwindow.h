@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QDebug>
+#include <QMessageBox>
+#include <QCryptographicHash>
+#include <QString>
 
 namespace Ui {
 class MainWindow;
@@ -14,6 +18,9 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
+private slots:
+    void on_pushLoginButton_clicked();
 
 private:
     Ui::MainWindow *ui;
