@@ -24,11 +24,29 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
+        foodpage.cpp \
+        login.cpp \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+        signuppage.cpp \
+        utils.cpp
 
 HEADERS += \
-        mainwindow.h
+        foodpage.h \
+        login.h \
+        mainwindow.h \
+        signuppage.h \
+        utils.h
 
 FORMS += \
-        mainwindow.ui
+        foodpage.ui \
+        login.ui \
+        mainwindow.ui \
+        signuppage.ui
+
+RESOURCES += \
+    images.qrc \
+    images.qrc
+
+DISTFILES += \
+    ../../../Downloads/home.jpg
